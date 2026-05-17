@@ -14,24 +14,39 @@
         <span class="brand-circle">😊</span>
         <div>
           <span class="brand-title">Happy Plaza</span>
-          <small>Centro Comercial</small>
+          <small>Centro de Moda</small>
         </div>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="nav-actions">
+        <label class="search-bar">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input type="search" placeholder="Buscar tiendas, ofertas..." aria-label="Buscar" />
+        </label>
+
+        <div class="icon-group" aria-label="Acciones rápidas">
+          <a href="#" class="icon-btn" aria-label="Favoritos">❤</a>
+          <a href="#" class="icon-btn" aria-label="Carrito">🛒</a>
+          <a href="#" class="icon-btn" aria-label="Perfil">👤</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
 
       <nav class="nav-menu" id="navMenu" aria-label="Navegación principal">
         <a href="#home">Inicio</a>
         <a href="#about">Sobre Nosotros</a>
         <a href="#shops">Tiendas</a>
+        <a href="#categories">Categorías</a>
+        <a href="#trends">Tendencias</a>
+        <a href="#promotions">Promociones</a>
         <a href="#gallery">Galería</a>
         <a href="#location">Ubicación</a>
-        <a href="#contact">Contacto</a>
-        <a href="#location" class="btn btn-outline">Contacto</a>
+        <a href="#contact" class="btn btn-outline">Contacto</a>
       </nav>
     </div>
   </header>
@@ -40,12 +55,183 @@
     <section class="hero" id="home">
       <div class="hero-overlay"></div>
       <div class="container hero-content reveal">
-        <p class="eyebrow">Tu punto feliz en Chimbote</p>
-        <h1>Happy Plaza: donde la familia vive la alegría del shopping.</h1>
-        <p class="hero-text">6 años conectando moda, gastronomía y entretenimiento con el corazón de Ancash.</p>
+        <p class="eyebrow">Moda, estilo y lifestyle</p>
+        <h1>LA MODA EMPIEZA AQUÍ</h1>
+        <p class="hero-text">Tu estilo, tu Happy Plaza. Nuevas tendencias 2026 en ropa, zapatos, accesorios y lifestyle urbano.</p>
         <div class="hero-actions">
-          <a href="#location" class="btn btn-primary">¿Cómo llegar?</a>
-          <a href="#shops" class="btn btn-secondary">Ver servicios</a>
+          <a href="#trends" class="btn btn-primary">Ver tendencias</a>
+          <a href="#promotions" class="btn btn-secondary">Ver promociones</a>
+        </div>
+        <div class="hero-badges">
+          <span class="hero-badge">Nuevas colecciones</span>
+          <span class="hero-badge">Sneakers exclusivas</span>
+          <span class="hero-badge">Looks de temporada</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section categories" id="categories">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Categorías destacadas</span>
+          <h2>Ropa, zapatos y accesorios con estilo</h2>
+        </div>
+        <div class="category-grid reveal">
+          <article class="category-card">
+            <span class="category-icon">👕</span>
+            <h3>Ropa</h3>
+            <p>Looks preparados para cada momento del día.</p>
+          </article>
+          <article class="category-card">
+            <span class="category-icon">👟</span>
+            <h3>Zapatos</h3>
+            <p>Sneakers, botas y calzado urbano de tendencia.</p>
+          </article>
+          <article class="category-card">
+            <span class="category-icon">👜</span>
+            <h3>Accesorios</h3>
+            <p>Bolsos, joyas y detalles que definen tu outfit.</p>
+          </article>
+          <article class="category-card">
+            <span class="category-icon">🕶</span>
+            <h3>Moda urbana</h3>
+            <p>Estilo moderno, fresco y con actitud.</p>
+          </article>
+          <article class="category-card">
+            <span class="category-icon">💄</span>
+            <h3>Belleza</h3>
+            <p>Cuidado personal y marcas lifestyle con impacto.</p>
+          </article>
+          <article class="category-card">
+            <span class="category-icon">⌚</span>
+            <h3>Lifestyle</h3>
+            <p>Accesorios y tendencias que elevan tu experiencia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trends" id="trends">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Tendencias</span>
+          <h2>Looks y sneakers que marcan la temporada</h2>
+        </div>
+        <div class="trend-grid reveal">
+          <article class="trend-card">
+            <img src="https://placehold.co/720x520/1A1A1A/FFFFFF?text=Outfit+2026" alt="Outfit juvenil moderno" />
+            <div class="trend-copy">
+              <p class="trend-tag">Outfit</p>
+              <h3>Look street style</h3>
+              <p>Combina prendas urbanas con accesorios con actitud.</p>
+            </div>
+          </article>
+          <article class="trend-card">
+            <img src="https://placehold.co/720x520/005BFF/FFFFFF?text=Sneakers" alt="Sneakers tendencia" />
+            <div class="trend-copy">
+              <p class="trend-tag">Sneakers</p>
+              <h3>Calzado premium</h3>
+              <p>Las zapatillas que no pueden faltar en tu closet.</p>
+            </div>
+          </article>
+          <article class="trend-card">
+            <img src="https://placehold.co/720x520/FF3B5C/FFFFFF?text=Accesorios" alt="Accesorios fashion" />
+            <div class="trend-copy">
+              <p class="trend-tag">Accesorios</p>
+              <h3>Bolsos y joyería</h3>
+              <p>Detalles que elevan cualquier outfit.</p>
+            </div>
+          </article>
+          <article class="trend-card">
+            <img src="https://placehold.co/720x520/FFD426/1F2937?text=Street+Style" alt="Moda street style" />
+            <div class="trend-copy">
+              <p class="trend-tag">Street</p>
+              <h3>Moda urbana</h3>
+              <p>Prendas inspiradas en el ritmo de la ciudad.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section promotions" id="promotions">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Promociones</span>
+          <h2>Ofertas destacadas para tu próxima visita</h2>
+        </div>
+        <div class="promo-grid reveal">
+          <article class="promo-card">
+            <div class="promo-badge hot">HOT</div>
+            <img src="https://placehold.co/720x520/005BFF/FFFFFF?text=Zapatillas" alt="50% OFF en zapatillas" />
+            <div class="promo-body">
+              <p class="promo-tag">50% OFF en zapatillas</p>
+              <h3>Sneakers de temporada</h3>
+              <p>Las ediciones más buscadas ahora con descuento especial.</p>
+              <a href="#shops" class="btn btn-primary">Comprar ahora</a>
+            </div>
+          </article>
+          <article class="promo-card">
+            <div class="promo-badge nuevo">NUEVO</div>
+            <img src="https://placehold.co/720x520/FFD426/1F2937?text=Coleccion" alt="Nueva colección fashion" />
+            <div class="promo-body">
+              <p class="promo-tag">Nueva colección</p>
+              <h3>Estilo primavera</h3>
+              <p>Descubre prendas frescas, cortes modernos y texturas premium.</p>
+              <a href="#shops" class="btn btn-primary">Ver colección</a>
+            </div>
+          </article>
+          <article class="promo-card">
+            <div class="promo-badge popular">POPULAR</div>
+            <img src="https://placehold.co/720x520/FF3B5C/FFFFFF?text=Accesorios" alt="2x1 en accesorios" />
+            <div class="promo-body">
+              <p class="promo-tag">2x1 en accesorios</p>
+              <h3>Bolsos y joyas</h3>
+              <p>Refresca tu look con complementos seleccionados.</p>
+              <a href="#shops" class="btn btn-primary">Aprovecha</a>
+            </div>
+          </article>
+          <article class="promo-card">
+            <div class="promo-badge hot">FASHION</div>
+            <img src="https://placehold.co/720x520/1A1A1A/FFFFFF?text=Fashion+Week" alt="Fashion Week" />
+            <div class="promo-body">
+              <p class="promo-tag">Fashion Week</p>
+              <h3>Editorial de estilo</h3>
+              <p>Inspírate con tendencias y looks exclusivos del mall.</p>
+              <a href="#trends" class="btn btn-primary">Descubrir</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Servicios</span>
+          <h2>Comodidad y facilidades a tu alcance</h2>
+        </div>
+        <div class="service-grid reveal">
+          <article class="service-card">
+            <span class="service-icon">🏧</span>
+            <h3>Cajeros</h3>
+            <p>Retiros rápidos y pagos seguros en múltiples puntos.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">🤱</span>
+            <h3>Lactario</h3>
+            <p>Espacios tranquilos y privados para el bienestar de la familia.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">📶</span>
+            <h3>Wi-Fi</h3>
+            <p>Conexión rápida y estable en todas nuestras zonas comunes.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">🚗</span>
+            <h3>Parking</h3>
+            <p>Estacionamiento seguro y fácil acceso al centro comercial.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -54,12 +240,12 @@
       <div class="container grid-2 reveal">
         <div class="about-text">
           <span class="section-label">Sobre Nosotros</span>
-          <h2>El centro comercial de Chimbote pensado para toda la familia</h2>
-          <p>Happy Plaza es el espacio local donde cada visita se siente cercana, cálida y llena de experiencias. Celebramos 6 años apoyando el comercio regional y ofreciendo un ambiente seguro, accesible y divertido.</p>
+          <h2>El centro comercial de moda y lifestyle de Chimbote</h2>
+          <p>Happy Plaza es el destino urbano donde la moda, los accesorios y el estilo juvenil se encuentran. Celebramos 6 años impulsando tendencias y ofreciendo experiencias shopping memorables.</p>
           <ul class="about-list">
-            <li><strong>6 años</strong> de servicio en Chimbote.</li>
-            <li><strong>Misión</strong>: ser el centro comercial más querido de la ciudad.</li>
-            <li><strong>Visión</strong>: crecer con los vecinos, comercios y visitantes.</li>
+            <li><strong>6 años</strong> de moda urbana en Chimbote.</li>
+            <li><strong>Misión</strong>: ser el punto de referencia fashion de la ciudad.</li>
+            <li><strong>Visión</strong>: conectar marcas, jóvenes y experiencias con estilo.</li>
           </ul>
         </div>
         <div class="about-card">
@@ -75,24 +261,24 @@
       <div class="container">
         <div class="section-header reveal">
           <span class="section-label">Tiendas y Servicios</span>
-          <h2>Encuentra todo lo que necesitas en un solo lugar</h2>
+          <h2>Encuentra marcas fashion y lifestyle en un solo lugar</h2>
         </div>
         <div class="cards-grid reveal">
           <article class="card card-primary">
             <h3>Moda</h3>
-            <p>Ropa, accesorios y calzado para toda la familia.</p>
+            <p>Ropa y tendencias juveniles con marcas top.</p>
           </article>
           <article class="card card-secondary">
-            <h3>Gastronomía</h3>
-            <p>Sabores locales y opciones internacionales para todos.</p>
+            <h3>Zapatos</h3>
+            <p>Sneakers, sandalias y calzado urbano para cada estilo.</p>
           </article>
           <article class="card card-tertiary">
-            <h3>Entretenimiento</h3>
-            <p>Cine, juegos y actividades para niños y jóvenes.</p>
+            <h3>Accesorios</h3>
+            <p>Detalles premium que completan tu outfit.</p>
           </article>
           <article class="card card-quaternary">
-            <h3>Servicios</h3>
-            <p>Bancos, cajeros, lactario y cambiadores de bebé.</p>
+            <h3>Beauty & Lifestyle</h3>
+            <p>Marcas de belleza, cuidado personal y lifestyle.</p>
           </article>
         </div>
       </div>
