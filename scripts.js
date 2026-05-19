@@ -47,3 +47,24 @@ revealElements.forEach((element) => {
 
 // Aquí puedes añadir más lógica específica del proyecto.
 // Por ejemplo, reemplazar el formulario visual con una integración real luego.
+
+const sections = document.querySelectorAll('section[id]');
+const menuLinks = document.querySelectorAll('.nav-menu a');
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        menuLinks.forEach((link) => link.classList.remove('active'));
+        const activeLink = document.querySelector(`.nav-menu a[href="#${entry.target.id}"]`);
+        if (activeLink) activeLink.classList.add('active');
+      }
+    });
+  },
+  {
+    rootMargin: '-40% 0px -55% 0px',
+    threshold: 0,
+  }
+);
+
+sections.forEach((section) => sectionObserver.observe(section));

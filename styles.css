@@ -32,7 +32,7 @@ html {
 body {
   margin: 0;
   font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: linear-gradient(180deg, #F5F7FF 0%, #F7F9FF 45%, #FFF7E6 100%);
+  background: #FFF8D6;
   color: var(--text-dark);
   line-height: 1.6;
 }
@@ -71,7 +71,7 @@ textarea {
 }
 
 .site-header.scrolled {
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(180, 130, 0, 0.95);
   box-shadow: 0 24px 80px rgba(15, 23, 42, 0.1);
 }
 
@@ -661,6 +661,21 @@ textarea {
   font-size: 1rem;
 }
 
+.info-grid h3 {
+  display: inline-block;
+  background: var(--color-yellow);
+  color: #0F172A;
+  padding: 0.25rem 0.85rem;
+  border-radius: 999px;
+}
+
+.info-grid p {
+  background: rgba(0, 91, 255, 0.06);
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  color: var(--text-dark);
+}
+
 .small-note {
   font-size: 0.95rem;
   color: var(--text-muted);
@@ -911,6 +926,21 @@ textarea {
   }
 
   .section h2 {
-    font-size: 2rem;
+      font-size: 2rem;
+    }
   }
-}
+
+  .nav-menu a.active {
+    color: var(--color-blue);
+    background: rgba(0, 91, 255, 0.08);
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 0.75rem 1rem;
+  }
+  .site-footer h4 {
+    display: inline-block;
+    background: var(--color-yellow);
+    color: #0F172A;
+    padding: 0.3rem 0.9rem;
+    border-radius: 999px;
+  }
