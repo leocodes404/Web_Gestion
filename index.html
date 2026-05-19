@@ -3,47 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Plaza - Centro Comercial | Chimbote, Perú</title>
-  <!-- Fuente local segura: elimina la dependencia externa de Google Fonts para evitar advertencias de SRI -->
+  <title>Happy Plaza - EN LA MODA NO HAY REGLAS</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header" id="header">
     <div class="container nav-container">
       <a href="#home" class="brand">
-        <span class="brand-circle">😊</span>
+        <img src="images/Logo_HappyPlaza.jpg" alt="Logo Happy Plaza" class="brand-logo" />
         <div>
-          <span class="brand-title">Happyy Plaza</span>
-          <small>Centro de Moda</small>
+          <span class="brand-title">Happy Plaza</span>
+          <small>EN LA MODA NO HAY REGLAS</small>
         </div>
       </a>
 
-      <div class="nav-actions">
-        <label class="search-bar">
-          <span class="search-icon" aria-hidden="true">🔍</span>
-          <input type="search" placeholder="Buscar tiendas, ofertas..." aria-label="Buscar" />
-        </label>
-
-        <div class="icon-group" aria-label="Acciones rápidas">
-          <a href="#" class="icon-btn" aria-label="Favoritos">❤</a>
-          <a href="#" class="icon-btn" aria-label="Carrito">🛒</a>
-          <a href="#" class="icon-btn" aria-label="Perfil">👤</a>
-        </div>
-
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
       <nav class="nav-menu" id="navMenu" aria-label="Navegación principal">
         <a href="#home">Inicio</a>
         <a href="#about">Sobre Nosotros</a>
-        <a href="#shops">Tiendas</a>
         <a href="#categories">Categorías</a>
-        <a href="#trends">Tendencias</a>
-        <a href="#promotions">Promociones</a>
         <a href="#gallery">Galería</a>
         <a href="#location">Ubicación</a>
         <a href="#contact">Contacto</a>
@@ -55,183 +38,13 @@
     <section class="hero" id="home">
       <div class="hero-overlay"></div>
       <div class="container hero-content reveal">
-        <p class="eyebrow">Moda, estilo y lifestyle</p>
-        <h1>LA MODA EMPIEZA AQUÍ</h1>
-        <p class="hero-text">Tu estilo, tu Happy Plaza. Nuevas tendencias 2026 en ropa, zapatos, accesorios y lifestyle urbano.</p>
-        <div class="hero-actions">
-          <a href="#trends" class="btn btn-primary">Ver tendencias</a>
-          <a href="#promotions" class="btn btn-secondary">Ver promociones</a>
-        </div>
-        <div class="hero-badges">
-          <span class="hero-badge">Nuevas colecciones</span>
-          <span class="hero-badge">Sneakers exclusivas</span>
-          <span class="hero-badge">Looks de temporada</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section categories" id="categories">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Categorías destacadas</span>
-          <h2>Ropa, zapatos y accesorios con estilo</h2>
-        </div>
-        <div class="category-grid reveal">
-          <article class="category-card">
-            <span class="category-icon">👕</span>
-            <h3>Ropa</h3>
-            <p>Looks preparados para cada momento del día.</p>
-          </article>
-          <article class="category-card">
-            <span class="category-icon">👟</span>
-            <h3>Zapatos</h3>
-            <p>Sneakers, botas y calzado urbano de tendencia.</p>
-          </article>
-          <article class="category-card">
-            <span class="category-icon">👜</span>
-            <h3>Accesorios</h3>
-            <p>Bolsos, joyas y detalles que definen tu outfit.</p>
-          </article>
-          <article class="category-card">
-            <span class="category-icon">🕶</span>
-            <h3>Moda urbana</h3>
-            <p>Estilo moderno, fresco y con actitud.</p>
-          </article>
-          <article class="category-card">
-            <span class="category-icon">💄</span>
-            <h3>Belleza</h3>
-            <p>Cuidado personal y marcas lifestyle con impacto.</p>
-          </article>
-          <article class="category-card">
-            <span class="category-icon">⌚</span>
-            <h3>Lifestyle</h3>
-            <p>Accesorios y tendencias que elevan tu experiencia.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section trends" id="trends">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Tendencias</span>
-          <h2>Looks y sneakers que marcan la temporada</h2>
-        </div>
-        <div class="trend-grid reveal">
-          <article class="trend-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTXiUTHsXablDNHhyikMc9RACMRUSJ5lzjzg&s" alt="Outfit juvenil moderno" />
-            <div class="trend-copy">
-              <p class="trend-tag">Outfit</p>
-              <h3>Look street style</h3>
-              <p>Combina prendas urbanas con accesorios con actitud.</p>
-            </div>
-          </article>
-          <article class="trend-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlvccdUqErCBfKcb3SkE3ty5YOOrfOIZ-7g&s" alt="Sneakers tendencia" />
-            <div class="trend-copy">
-              <p class="trend-tag">Sneakers</p>
-              <h3>Calzado premium</h3>
-              <p>Las zapatillas que no pueden faltar en tu closet.</p>
-            </div>
-          </article>
-          <article class="trend-card">
-            <img src="https://thumbs.dreamstime.com/b/ri-blanco-del-verano-de-las-cajas-cosm-ticos-vidrios-gafas-sol-los-bolsos-bolso-bufandas-la-moda-perla-bisuter-accesorios-145826654.jpg" alt="Accesorios fashion" />
-            <div class="trend-copy">
-              <p class="trend-tag">Accesorios</p>
-              <h3>Bolsos y joyería</h3>
-              <p>Detalles que elevan cualquier outfit.</p>
-            </div>
-          </article>
-          <article class="trend-card">
-            <img src="https://topfloortalent.co/cdn/shop/articles/alvaro_diaz_paris_fashion_week.jpg?v=1743704966&width=2048" alt="Moda street style" />
-            <div class="trend-copy">
-              <p class="trend-tag">Street</p>
-              <h3>Moda urbana</h3>
-              <p>Prendas inspiradas en el ritmo de la ciudad.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section promotions" id="promotions">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Promociones</span>
-          <h2>Ofertas destacadas para tu próxima visita</h2>
-        </div>
-        <div class="promo-grid reveal">
-          <article class="promo-card">
-            <div class="promo-badge hot">HOT</div>
-            <img src="https://placehold.co/720x520/005BFF/FFFFFF?text=Zapatillas" alt="50% OFF en zapatillas" />
-            <div class="promo-body">
-              <p class="promo-tag">50% OFF en zapatillas</p>
-              <h3>Sneakers de temporada</h3>
-              <p>Las ediciones más buscadas ahora con descuento especial.</p>
-              <a href="#shops" class="btn btn-primary">Comprar ahora</a>
-            </div>
-          </article>
-          <article class="promo-card">
-            <div class="promo-badge nuevo">NUEVO</div>
-            <img src="https://placehold.co/720x520/FFD426/1F2937?text=Coleccion" alt="Nueva colección fashion" />
-            <div class="promo-body">
-              <p class="promo-tag">Nueva colección</p>
-              <h3>Estilo primavera</h3>
-              <p>Descubre prendas frescas, cortes modernos y texturas premium.</p>
-              <a href="#shops" class="btn btn-primary">Ver colección</a>
-            </div>
-          </article>
-          <article class="promo-card">
-            <div class="promo-badge popular">POPULAR</div>
-            <img src="https://placehold.co/720x520/FF3B5C/FFFFFF?text=Accesorios" alt="2x1 en accesorios" />
-            <div class="promo-body">
-              <p class="promo-tag">2x1 en accesorios</p>
-              <h3>Bolsos y joyas</h3>
-              <p>Refresca tu look con complementos seleccionados.</p>
-              <a href="#shops" class="btn btn-primary">Aprovecha</a>
-            </div>
-          </article>
-          <article class="promo-card">
-            <div class="promo-badge hot">FASHION</div>
-            <img src="https://placehold.co/720x520/1A1A1A/FFFFFF?text=Fashion+Week" alt="Fashion Week" />
-            <div class="promo-body">
-              <p class="promo-tag">Fashion Week</p>
-              <h3>Editorial de estilo</h3>
-              <p>Inspírate con tendencias y looks exclusivos del mall.</p>
-              <a href="#trends" class="btn btn-primary">Descubrir</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section services" id="services">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Servicios</span>
-          <h2>Comodidad y facilidades a tu alcance</h2>
-        </div>
-        <div class="service-grid reveal">
-          <article class="service-card">
-            <span class="service-icon">🏧</span>
-            <h3>Cajeros</h3>
-            <p>Retiros rápidos y pagos seguros en múltiples puntos.</p>
-          </article>
-          <article class="service-card">
-            <span class="service-icon">🤱</span>
-            <h3>Lactario</h3>
-            <p>Espacios tranquilos y privados para el bienestar de la familia.</p>
-          </article>
-          <article class="service-card">
-            <span class="service-icon">📶</span>
-            <h3>Wi-Fi</h3>
-            <p>Conexión rápida y estable en todas nuestras zonas comunes.</p>
-          </article>
-          <article class="service-card">
-            <span class="service-icon">🚗</span>
-            <h3>Parking</h3>
-            <p>Estacionamiento seguro y fácil acceso al centro comercial.</p>
-          </article>
+        <span class="hero-eyebrow">Nuevo hub de moda urbana</span>
+        <h1>EN LA MODA NO HAY REGLAS</h1>
+        <p class="hero-text">Happy Plaza es el destino de ropa, accesorios y cultura streetwear en Chimbote. Una plaza donde el estilo se vive libre, directo y con actitud.</p>
+        <div class="hero-meta">
+          <span>Moda urbana</span>
+          <span>Escaparate de marcas</span>
+          <span>Comunidad creativa</span>
         </div>
       </div>
     </section>
@@ -239,45 +52,60 @@
     <section class="section about" id="about">
       <div class="container grid-2 reveal">
         <div class="about-text">
-          <span class="section-label">Sobre Nosotros</span>
-          <h2>El centro comercial de moda y lifestyle de Chimbote</h2>
-          <p>Happy Plaza es el destino urbano donde la moda, los accesorios y el estilo juvenil se encuentran. Celebramos 6 años impulsando tendencias y ofreciendo experiencias shopping memorables.</p>
+          <span class="section-label">Sobre la Plaza</span>
+          <h2>Un espacio creado para quienes viven la moda sin límites</h2>
+          <p>Happy Plaza reúne tiendas, propuestas y accesorios urbanos en un solo lugar. Es resultado de un estilo urbano inspirado en el movimiento, el color y el diseño sin reglas.</p>
+          <p>Aquí la experiencia no es solo comprar: es explorar, descubrir marcas con actitud y compartir una vibra fashion que se siente auténtica.</p>
           <ul class="about-list">
-            <li><strong>6 años</strong> de moda urbana en Chimbote.</li>
-            <li><strong>Misión</strong>: ser el punto de referencia fashion de la ciudad.</li>
-            <li><strong>Visión</strong>: conectar marcas, jóvenes y experiencias con estilo.</li>
+            <li><strong>Ambiente urbano:</strong> estéticas streetwear, lifestyle y moda contemporánea.</li>
+            <li><strong>Espacio creativo:</strong> una plaza que funciona como escaparate de tendencias.</li>
+            <li><strong>Comunidad:</strong> moda para personas libres, jóvenes y atrevidas.</li>
           </ul>
         </div>
         <div class="about-card">
           <div class="about-card-inner">
-            <img src="https://scontent.ftru2-1.fna.fbcdn.net/v/t39.30808-6/574490182_1267675345376666_2626262494180292624_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEZBVx_DSsaDgVqtgEWJJkX-Lw8WqkFhXL4vDxaqQWFcgfsnRPUIhsWxunxqShmuUXJOH2-ECVo3KTDG8s8cVsK&_nc_ohc=F9qD-XArx8gQ7kNvwEg5FQy&_nc_oc=AdpznNwanBkRqSzwJ9D6BuqrpITGKdgbctg-ibmwbQlMuNZuWeQwbgVEEfuquXbAeZ-ySFMgv20JjkMid-P1DwcV&_nc_zt=23&_nc_ht=scontent.ftru2-1.fna&_nc_gid=DHUrLLfprZFUE4PZhFzfgg&_nc_ss=7b2a8&oh=00_Af5goZoPzav6sxrty4FhMdxnfuGzBQykSkoMmvAqU-sTHA&oe=6A0FF0C0" alt="Happy Plaza, vista del centro comercial" />
+            <img src="https://images.pexels.com/photos/3775537/pexels-photo-3775537.jpeg" alt="Happy Plaza estilo urbano" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section shops" id="shops">
+    <section class="section categories" id="categories">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-label">Tiendas y Servicios</span>
-          <h2>Encuentra marcas fashion y lifestyle en un solo lugar</h2>
+          <span class="section-label">Directorio</span>
+          <h2>Categorías que definen nuestro estilo</h2>
         </div>
-        <div class="cards-grid reveal">
-          <article class="card card-primary">
-            <h3>Moda</h3>
-            <p>Ropa y tendencias juveniles con marcas top.</p>
+        <div class="category-grid reveal">
+          <article class="category-card">
+            <span class="category-icon">👕</span>
+            <h3>Ropa</h3>
+            <p>Prendas con personalidad, cortes modernos y actitud street.</p>
           </article>
-          <article class="card card-secondary">
-            <h3>Zapatos</h3>
-            <p>Sneakers, sandalias y calzado urbano para cada estilo.</p>
+          <article class="category-card">
+            <span class="category-icon">👟</span>
+            <h3>Calzado</h3>
+            <p>Sneakers, botas y piezas urbanas para completar tu look.</p>
           </article>
-          <article class="card card-tertiary">
+          <article class="category-card">
+            <span class="category-icon">👜</span>
             <h3>Accesorios</h3>
-            <p>Detalles premium que completan tu outfit.</p>
+            <p>Bolsos, joyas y detalles que elevan cualquier outfit.</p>
           </article>
-          <article class="card card-quaternary">
-            <h3>Beauty & Lifestyle</h3>
-            <p>Marcas de belleza, cuidado personal y lifestyle.</p>
+          <article class="category-card">
+            <span class="category-icon">🕶</span>
+            <h3>Streetwear</h3>
+            <p>Estilos que mezclan arte, moda y expresión urbana.</p>
+          </article>
+          <article class="category-card">
+            <span class="category-icon">💄</span>
+            <h3>Beauty</h3>
+            <p>Propuestas de cuidado personal para un look completo.</p>
+          </article>
+          <article class="category-card">
+            <span class="category-icon">⌚</span>
+            <h3>Lifestyle</h3>
+            <p>Complementos y tendencias que acompañan tu día a día.</p>
           </article>
         </div>
       </div>
@@ -287,13 +115,13 @@
       <div class="container">
         <div class="section-header reveal">
           <span class="section-label">Galería</span>
-          <h2>Un vistazo a nuestro espacio alegre</h2>
+          <h2>Una atmósfera de moda y energía</h2>
         </div>
         <div class="gallery-grid reveal">
           <img src="https://images.pexels.com/photos/19807386/pexels-photo-19807386.jpeg" alt="Happy Plaza interior" />
           <img src="https://images.pexels.com/photos/10195985/pexels-photo-10195985.jpeg" alt="Happy Plaza tiendas" />
           <img src="https://images.pexels.com/photos/33327425/pexels-photo-33327425.png" alt="Happy Plaza eventos" />
-          </div>
+        </div>
       </div>
     </section>
 
@@ -301,13 +129,13 @@
       <div class="container grid-2 reveal">
         <div class="location-map">
           <span class="section-label">Ubicación</span>
-          <h2>Visítanos en Chimbote</h2>
+          <h2>En el corazón de Chimbote</h2>
           <div class="map-wrapper">
             <iframe title="Mapa de Happy Plaza en Chimbote" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d475.8128099336533!2d-78.59203432599948!3d-9.074334262938564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ab810a20569381%3A0xd45e2b323c4c0da7!2sHAPPY%20PLAZA!5e1!3m2!1ses-419!2sus!4v1779152534988!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
         <div class="location-info">
-          <p>Happy Plaza está en el corazón de Chimbote, ofreciendo comodidad y entretenimiento para familias, amigos y visitantes de la región.</p>
+          <p>Happy Plaza es un espacio para descubrir moda urbana, marcas independientes y accesorios con personalidad.</p>
           <div class="info-grid">
             <div>
               <h3>Dirección</h3>
@@ -322,6 +150,7 @@
               <p>+51 946 115 453</p>
             </div>
           </div>
+        </div>
       </div>
     </section>
 
@@ -329,8 +158,8 @@
       <div class="container grid-2 reveal">
         <div>
           <span class="section-label">Contacto</span>
-          <h2>Escribe para conocer más</h2>
-          <p>Envía tus dudas, sugerencias o solicitudes y pronto nos comunicaremos contigo. El formulario es solo visual por ahora.</p>
+          <h2>Escríbenos para saber más</h2>
+          <p>Para consultas sobre marcas, estilos o visitas, usa este espacio de contacto. No incluye compras ni pagos.</p>
           <form class="contact-form" onsubmit="return false;">
             <label for="name">Nombre</label>
             <input type="text" id="name" placeholder="Tu nombre" />
@@ -339,32 +168,31 @@
             <label for="message">Mensaje</label>
             <textarea id="message" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
             <button class="btn btn-primary" type="submit">Enviar mensaje</button>
-            <p class="form-note">* Este formulario es visual y no envía datos. Sustitúyelo por la integración real cuando estés listo.</p>
+            <p class="form-note">Página informativa sin integración de pagos.</p>
           </form>
         </div>
         <div class="social-panel">
-          <div class="social-card">
-            <h3>Redes Sociales</h3>
-            <p>Síguenos para noticias, promociones y eventos familiares.</p>
-            <div class="social-links">
-              <a href="https://www.facebook.com/HappyPlazaChimbote/?locale=es_LA" target="_blank" aria-label="Facebook">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
-                Facebook
-              </a>
-              <a href="https://www.instagram.com/happyplazachimbote/" target="_blank" aria-label=" Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="url(#ig)"><defs><linearGradient id="ig" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f09433"/><stop offset="25%" stop-color="#e6683c"/><stop offset="50%" stop-color="#dc2743"/><stop offset="75%" stop-color="#cc2366"/><stop offset="100%" stop-color="#bc1888"/></linearGradient></defs><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.986 15.668 24 15.259 24 12s-.014-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-                Instagram
-              </a>
-              <a href="https://www.tiktok.com/@happyplazachimbote?_r=1&_t=ZS-96TidbYuX0C" target="_blank" aria-label=" TikTok">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#000000"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-                TikTok
-              </a>
-            </div>
-          </div>
-          <div class="social-card highlight">
+          <div class="social-card contact-summary">
             <h3>Atención al cliente</h3>
-            <p>Estamos listos para ayudarte con todo lo que necesites en Happy Plaza.</p>
+            <p>¿Tienes dudas sobre marcas, eventos o visitas? Nuestro equipo está listo para ayudarte.</p>
             <p class="contact-phone">+51 946 115 453</p>
+            <div class="contact-summary-row">
+              <div>
+                <h4>Horario</h4>
+                <p>Lun - Dom: 10:00 a.m - 10:00 p.m</p>
+              </div>
+              <div>
+                <h4>Ubicación</h4>
+                <p>Jr. Leoncio Prado con Jr. Elias Aguirre</p>
+              </div>
+            </div>
+            <div class="social-divider"></div>
+            <h4>Síguenos</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/HappyPlazaChimbote/?locale=es_LA" target="_blank" aria-label="Facebook">Facebook</a>
+              <a href="https://www.instagram.com/happyplazachimbote/" target="_blank" aria-label="Instagram">Instagram</a>
+              <a href="https://www.tiktok.com/@happyplazachimbote?_r=1&_t=ZS-96TidbYuX0C" target="_blank" aria-label="TikTok">TikTok</a>
+            </div>
           </div>
         </div>
       </div>
@@ -375,19 +203,19 @@
     <div class="container footer-grid">
       <div>
         <a href="#home" class="brand footer-brand">
-          <span class="brand-circle">😊</span>
+          <img src="images/Logo_HappyPlaza.jpg" alt="Logo Happy Plaza" class="brand-logo" />
           <div>
             <span class="brand-title">Happy Plaza</span>
-            <small>Centro Comercial</small>
+            <small>Centro de Moda</small>
           </div>
         </a>
-        <p>Diseñado para la comunidad de Chimbote con alegría y color.</p>
+        <p>Una plaza urbana que celebra la moda libre y sin reglas en Chimbote.</p>
       </div>
       <div>
         <h4>Enlaces rápidos</h4>
         <nav class="footer-nav" aria-label="Enlaces de pie de página">
-          <a href="#about">Sobre Nosotros</a>
-          <a href="#shops">Tiendas</a>
+          <a href="#about">Sobre</a>
+          <a href="#categories">Categorías</a>
           <a href="#gallery">Galería</a>
           <a href="#location">Ubicación</a>
         </nav>
@@ -395,18 +223,9 @@
       <div>
         <h4>Síguenos</h4>
         <div class="footer-social">
-          <a href="https://www.facebook.com/HappyPlazaChimbote/?locale=es_LA" target="_blank" aria-label="Facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
-            Facebook
-          </a>
-          <a href="https://www.instagram.com/happyplazachimbote/" target="_blank" aria-label="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="url(#ig2)"><defs><linearGradient id="ig2" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f09433"/><stop offset="25%" stop-color="#e6683c"/><stop offset="50%" stop-color="#dc2743"/><stop offset="75%" stop-color="#cc2366"/><stop offset="100%" stop-color="#bc1888"/></linearGradient></defs><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.986 15.668 24 15.259 24 12s-.014-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-            Instagram
-          </a>
-          <a href="https://www.tiktok.com/@happyplazachimbote?_r=1&_t=ZS-96TidbYuX0C" target="_blank" aria-label="TikTok">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#ffffff"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-            TikTok
-          </a>
+          <a href="https://www.facebook.com/HappyPlazaChimbote/?locale=es_LA" target="_blank" aria-label="Facebook">Facebook</a>
+          <a href="https://www.instagram.com/happyplazachimbote/" target="_blank" aria-label="Instagram">Instagram</a>
+          <a href="https://www.tiktok.com/@happyplazachimbote?_r=1&_t=ZS-96TidbYuX0C" target="_blank" aria-label="TikTok">TikTok</a>
         </div>
       </div>
     </div>
