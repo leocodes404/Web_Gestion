@@ -3,6 +3,7 @@
   --color-gray: #f4e8c5;
   --color-blue: #84b7ff;
   --color-yellow: #ffe79f;
+  --color-yellow-strong: #ffd600;
   --color-pink: #ffb7b7;
   --color-cyan: #8ff0ff;
   --color-white: #ffffff;
@@ -14,6 +15,8 @@
   --radius-sm: 18px;
   --transition: 0.35s ease;
   --screen-width: min(1120px, calc(100% - 2rem));
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
 }
 
 * {
@@ -26,7 +29,7 @@ html {
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-body);
   background: radial-gradient(circle at top left, rgba(255, 231, 161, 0.45), transparent 34%), #fff7eb;
   color: var(--text-body);
   line-height: 1.6;
@@ -74,8 +77,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 72px;
-  padding: 0.85rem 0;
+  min-height: 30px;
+  padding: 0.30rem 0;
 }
 
 .brand,
@@ -86,8 +89,8 @@ textarea {
 }
 
 .brand-logo {
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid rgba(255, 191, 82, 0.42);
@@ -110,6 +113,13 @@ textarea {
   display: block;
   font-weight: 800;
   color: var(--color-black);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
 }
 
 .site-header::before {
@@ -231,6 +241,10 @@ textarea {
   color: #ffae00;
   font-size: 0.85rem;
   margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeUp 0.7s ease forwards;
+  animation-delay: 0.1s;
 }
 
 .hero h1 {
@@ -239,6 +253,11 @@ textarea {
   line-height: 0.95;
   letter-spacing: -0.05em;
   color: var(--color-black);
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeUp 0.7s ease forwards;
+  animation-delay: 0.25s;
+  will-change: opacity, filter, transform;
 }
 
 .hero-text {
@@ -246,6 +265,10 @@ textarea {
   margin: 1.6rem 0 2rem;
   font-size: 1.05rem;
   color: var(--text-body);
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeUp 0.7s ease forwards;
+  animation-delay: 0.4s;
 }
 
 .hero-meta {
@@ -254,6 +277,10 @@ textarea {
   gap: 0.9rem;
   font-size: 0.95rem;
   color: var(--text-title);
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeUp 0.7s ease forwards;
+  animation-delay: 0.55s;
 }
 
 .hero-meta span {
@@ -262,6 +289,28 @@ textarea {
   color: var(--color-black);
   padding: 0.95rem 1.15rem;
   border-radius: 999px;
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeUp 0.7s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.hero-cta .btn {
+  min-width: 170px;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .section {
@@ -342,11 +391,24 @@ textarea {
   display: grid;
   gap: 1rem;
   box-shadow: 0 20px 40px rgba(88, 97, 134, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 32px 64px rgba(88, 97, 134, 0.18);
+  background: #fff3cc;
+  border-color: rgba(255, 196, 82, 0.7);
 }
 
 .category-icon {
-  font-size: 2rem;
-  color: var(--color-pink);
+  font-size: 2.2rem;
+  color: var(--color-blue);
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-icon {
+  transform: scale(1.2) rotate(-6deg);
 }
 
 .category-card h3 {
@@ -361,15 +423,205 @@ textarea {
 }
 
 .gallery-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1.4fr 1fr;
+  align-items: start;
 }
 
-.gallery-grid img {
+.gallery-featured {
   border-radius: 30px;
-  min-height: 280px;
-  object-fit: cover;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  height: 520px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-side {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.gallery-side img {
+  border-radius: 24px;
+  width: 100%;
+  height: 247px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-featured:hover,
+.gallery-side img:hover {
+  transform: scale(1.02);
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.event-card {
+  background: rgba(255, 246, 221, 0.95);
+  border: 1px solid rgba(255, 206, 121, 0.45);
+  border-radius: var(--radius);
+  padding: 1.8rem;
+  display: grid;
+  gap: 0.85rem;
+  box-shadow: 0 20px 40px rgba(88, 97, 134, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 32px 60px rgba(88, 97, 134, 0.15);
+}
+
+.event-featured {
+  border-color: rgba(255, 174, 0, 0.6);
+  background: linear-gradient(135deg, #fff8e0, #fff3c2);
+}
+
+.event-tag {
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #3c2200;
+  background: rgba(255, 196, 82, 0.45);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.event-date {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.event-day {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  color: var(--color-black);
+  line-height: 1;
+}
+
+.event-month {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-yellow-strong);
+  letter-spacing: 0.1em;
+}
+
+.event-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--color-black);
+}
+
+.event-card p {
+  margin: 0;
+  color: var(--text-body);
+  font-size: 0.95rem;
+}
+
+.event-floor {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.events-social {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.events-social p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 196, 82, 0.5);
+  background: rgba(255, 246, 220, 0.8);
+  color: var(--text-title);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-link:hover {
+  background: rgba(255, 214, 80, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 183, 67, 0.2);
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+  max-width: 260px;
+}
+
+.footer-whatsapp {
+  margin-top: 1rem;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 62px;
+  height: 62px;
+  background: #0f6d34;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.45);
+  z-index: 999;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.12);
+  box-shadow: 0 10px 36px rgba(37, 211, 102, 0.6);
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--color-black);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0 8px 8px;
+  z-index: 9999;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
 }
 
 .location-map,
@@ -436,11 +688,20 @@ textarea {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  border: 1px solid rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.24);
   border-radius: 18px;
   padding: 1rem 1.15rem;
-  background: rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.12);
   color: #0f172a;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: rgba(255, 211, 47, 0.95);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 0 0 4px rgba(255, 211, 47, 0.14);
 }
 
 .form-note {
@@ -535,7 +796,7 @@ textarea {
     position: absolute;
     right: 1rem;
     top: 72px;
-    background: rgba(8, 12, 22, 0.96);
+    background: rgba(255, 245, 200, 0.96);
     border-radius: 24px;
     padding: 1rem;
     flex-direction: column;
@@ -544,6 +805,8 @@ textarea {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    border: 1px solid rgba(255, 196, 82, 0.4);
+    box-shadow: 0 24px 50px rgba(109, 103, 74, 0.18);
   }
 
   .nav-menu.open {
@@ -555,6 +818,7 @@ textarea {
   .nav-menu a {
     padding: 0.75rem 0.85rem;
     width: 100%;
+    color: var(--color-black);
   }
 
   .menu-toggle {

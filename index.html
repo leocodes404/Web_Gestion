@@ -3,10 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Plaza - EN LA MODA NO HAY REGLAS</title>
+  <title>Happy Plaza Chimbote | Centro Comercial — EN LA MODA NO HAY REGLAS</title>
+  <meta name="description" content="Happy Plaza Chimbote: el hub de moda urbana en el corazón de Chimbote. 4 pisos de tiendas, accesorios, streetwear y más. Jr. Leoncio Prado con Jr. Elías Aguirre." />
+  <meta name="keywords" content="Happy Plaza, centro comercial Chimbote, moda Chimbote, streetwear Chimbote, tiendas Chimbote, Ancash" />
+  <meta name="author" content="Happy Plaza Chimbote" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Happy Plaza Chimbote — EN LA MODA NO HAY REGLAS" />
+  <meta property="og:description" content="El centro comercial de moda urbana más moderno de Chimbote. Streetwear, ropa, calzado, accesorios y más." />
+  <meta property="og:image" content="images/Banner_HappyPlaza.png" />
+  <meta property="og:url" content="https://leocodes404.github.io/Web_Gestion/" />
+  <meta property="og:locale" content="es_PE" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Happy Plaza Chimbote" />
+  <meta name="twitter:description" content="Hub de moda urbana en Chimbote. 4 pisos de tendencias." />
+  <meta name="twitter:image" content="images/Banner_HappyPlaza.png" />
+
+  <link rel="icon" type="image/jpeg" href="images/Logo_HappyPlaza.jpg" />
+  <link rel="apple-touch-icon" href="images/Logo_HappyPlaza.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ShoppingCenter",
+    "name": "Happy Plaza Chimbote",
+    "description": "Centro comercial de moda urbana con 4 pisos comerciales en Chimbote, Perú",
+    "url": "https://leocodes404.github.io/Web_Gestion/",
+    "telephone": "+51946115453",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jr. Leoncio Prado con Jr. Elías Aguirre",
+      "addressLocality": "Chimbote",
+      "addressRegion": "Áncash",
+      "addressCountry": "PE"
+    },
+    "openingHours": "Mo-Su 10:00-22:00",
+    "sameAs": [
+      "https://www.facebook.com/HappyPlazaChimbote",
+      "https://www.instagram.com/happyplazachimbote/",
+      "https://www.tiktok.com/@happyplazachimbote"
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a href="#home" class="skip-link">Saltar al contenido principal</a>
   <header class="site-header" id="header">
     <div class="container nav-container">
       <a href="#home" class="brand">
@@ -45,6 +94,10 @@
           <span>Moda urbana</span>
           <span>Escaparate de marcas</span>
           <span>Comunidad creativa</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#categories" class="btn btn-primary">Ver Categorías</a>
+          <a href="#location" class="btn btn-secondary">Cómo llegar</a>
         </div>
       </div>
     </section>
@@ -111,6 +164,51 @@
       </div>
     </section>
 
+    <section class="section events" id="events">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Eventos y Promociones</span>
+          <h2>Lo que está pasando en Happy Plaza</h2>
+        </div>
+        <div class="events-grid reveal">
+          <article class="event-card event-featured">
+            <div class="event-tag">🔥 Destacado</div>
+            <div class="event-date">
+              <span class="event-day">15</span>
+              <span class="event-month">JUN</span>
+            </div>
+            <h3>Happy Fashion Tour</h3>
+            <p>Descubre las últimas tendencias de temporada en una pasarela dentro de la plaza.</p>
+            <span class="event-floor">📍 Piso 1 — Atrio principal</span>
+          </article>
+          <article class="event-card">
+            <div class="event-tag">🛍️ Descuento</div>
+            <div class="event-date">
+              <span class="event-day">20</span>
+              <span class="event-month">JUN</span>
+            </div>
+            <h3>Semana de la Moda</h3>
+            <p>Ofertas especiales en tiendas seleccionadas durante toda la semana.</p>
+            <span class="event-floor">📍 Todos los pisos</span>
+          </article>
+          <article class="event-card">
+            <div class="event-tag">✨ Nuevo</div>
+            <div class="event-date">
+              <span class="event-day">01</span>
+              <span class="event-month">JUL</span>
+            </div>
+            <h3>Nuevas tiendas en el Piso 3</h3>
+            <p>Apertura de locales con propuestas frescas de streetwear y accesorios.</p>
+            <span class="event-floor">📍 Piso 3</span>
+          </article>
+        </div>
+        <div class="events-social reveal">
+          <p>Síguenos para no perderte ningún evento 👉</p>
+          <a href="https://www.instagram.com/happyplazachimbote/" target="_blank" class="btn btn-primary">Ver en Instagram</a>
+        </div>
+      </div>
+    </section>
+
     <section class="section gallery" id="gallery">
       <div class="container">
         <div class="section-header reveal">
@@ -118,9 +216,11 @@
           <h2>Una atmósfera de moda y energía</h2>
         </div>
         <div class="gallery-grid reveal">
-          <img src="https://images.pexels.com/photos/19807386/pexels-photo-19807386.jpeg" alt="Happy Plaza interior" />
-          <img src="https://images.pexels.com/photos/10195985/pexels-photo-10195985.jpeg" alt="Happy Plaza tiendas" />
-          <img src="https://images.pexels.com/photos/33327425/pexels-photo-33327425.png" alt="Happy Plaza eventos" />
+          <img src="https://images.pexels.com/photos/19807386/pexels-photo-19807386.jpeg" alt="Happy Plaza interior" class="gallery-featured" loading="lazy" />
+          <div class="gallery-side">
+            <img src="https://images.pexels.com/photos/10195985/pexels-photo-10195985.jpeg" alt="Happy Plaza tiendas" loading="lazy" />
+            <img src="https://images.pexels.com/photos/33327425/pexels-photo-33327425.png" alt="Happy Plaza eventos" loading="lazy" />
+          </div>
         </div>
       </div>
     </section>
@@ -160,15 +260,15 @@
           <span class="section-label">Contacto</span>
           <h2>Escríbenos para saber más</h2>
           <p>Para consultas sobre marcas, estilos o visitas, usa este espacio de contacto. No incluye compras ni pagos.</p>
-          <form class="contact-form" onsubmit="return false;">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/mleljgwe" method="POST">
             <label for="name">Nombre</label>
-            <input type="text" id="name" placeholder="Tu nombre" />
+            <input type="text" id="name" name="name" placeholder="Tu nombre" />
             <label for="email">Correo electrónico</label>
-            <input type="email" id="email" placeholder="tu@email.com" />
+            <input type="email" id="email" name="email" placeholder="tu@email.com" />
             <label for="message">Mensaje</label>
-            <textarea id="message" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
             <button class="btn btn-primary" type="submit">Enviar mensaje</button>
-            <p class="form-note">Página informativa sin integración de pagos.</p>
+            <p class="form-note">La mejor forma de contactarnos rápido.</p>
           </form>
         </div>
         <div class="social-panel">
@@ -189,9 +289,18 @@
             <div class="social-divider"></div>
             <h4>Síguenos</h4>
             <div class="social-links">
-              <a href="https://www.facebook.com/HappyPlazaChimbote/?locale=es_LA" target="_blank" aria-label="Facebook">Facebook</a>
-              <a href="https://www.instagram.com/happyplazachimbote/" target="_blank" aria-label="Instagram">Instagram</a>
-              <a href="https://www.tiktok.com/@happyplazachimbote?_r=1&_t=ZS-96TidbYuX0C" target="_blank" aria-label="TikTok">TikTok</a>
+              <a href="https://www.facebook.com/HappyPlazaChimbote/?locale=es_LA" target="_blank" aria-label="Facebook" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                Facebook
+              </a>
+              <a href="https://www.instagram.com/happyplazachimbote/" target="_blank" aria-label="Instagram" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                Instagram
+              </a>
+              <a href="https://www.tiktok.com/@happyplazachimbote?_r=1&_t=ZS-96TidbYuX0C" target="_blank" aria-label="TikTok" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.524 5.847L.057 23.5l5.797-1.522A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.006-1.374l-.36-.213-3.719.976.993-3.63-.234-.373A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+                TikTok
+              </a>
             </div>
           </div>
         </div>
@@ -201,7 +310,7 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
+      <div class="footer-brand-col">
         <a href="#home" class="brand footer-brand">
           <img src="images/Logo_HappyPlaza.jpg" alt="Logo Happy Plaza" class="brand-logo" />
           <div>
@@ -209,30 +318,58 @@
             <small>Centro de Moda</small>
           </div>
         </a>
-        <p>Una plaza urbana que celebra la moda libre y sin reglas en Chimbote.</p>
+        <p class="footer-desc">Una plaza urbana que celebra la moda libre y sin reglas en el corazón de Chimbote.</p>
+        <div class="footer-contact-info">
+          <span>📞 +51 946 115 453</span>
+          <span>🕐 Lun–Dom: 10:00 am – 10:00 pm</span>
+          <span>📍 Jr. Leoncio Prado con Jr. Elías Aguirre</span>
+        </div>
       </div>
       <div>
-        <h4>Enlaces rápidos</h4>
+        <h4>Navegación</h4>
         <nav class="footer-nav" aria-label="Enlaces de pie de página">
-          <a href="#about">Sobre</a>
+          <a href="#about">Sobre Nosotros</a>
           <a href="#categories">Categorías</a>
+          <a href="#events">Eventos</a>
           <a href="#gallery">Galería</a>
           <a href="#location">Ubicación</a>
+          <a href="#contact">Contacto</a>
         </nav>
       </div>
       <div>
-        <h4>Síguenos</h4>
+        <h4>Redes Sociales</h4>
         <div class="footer-social">
-          <a href="https://www.facebook.com/HappyPlazaChimbote/?locale=es_LA" target="_blank" aria-label="Facebook">Facebook</a>
-          <a href="https://www.instagram.com/happyplazachimbote/" target="_blank" aria-label="Instagram">Instagram</a>
-          <a href="https://www.tiktok.com/@happyplazachimbote?_r=1&_t=ZS-96TidbYuX0C" target="_blank" aria-label="TikTok">TikTok</a>
+          <a href="https://www.facebook.com/HappyPlazaChimbote/?locale=es_LA" target="_blank" aria-label="Facebook" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </a>
+          <a href="https://www.instagram.com/happyplazachimbote/" target="_blank" aria-label="Instagram" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+          <a href="https://www.tiktok.com/@happyplazachimbote" target="_blank" aria-label="TikTok" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.524 5.847L.057 23.5l5.797-1.522A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.006-1.374l-.36-.213-3.719.976.993-3.63-.234-.373A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+            TikTok
+          </a>
+        </div>
+        <div class="footer-whatsapp">
+          <a href="https://wa.me/51946115453" target="_blank" class="btn btn-primary" style="margin-top:1rem; font-size:0.9rem; padding: 0.75rem 1.2rem;">
+            💬 WhatsApp directo
+          </a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Happy Plaza - Centro Comercial. Todos los derechos reservados.</p>
+      <p>© 2026 Happy Plaza Chimbote — Centro Comercial de Moda Urbana. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <a href="https://wa.me/51946115453?text=Hola%20Happy%20Plaza%20Chimbote%2C%20quiero%20más%20información" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.524 5.847L.057 23.5l5.797-1.522A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.006-1.374l-.36-.213-3.719.976.993-3.63-.234-.373A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/>
+    </svg>
+  </a>
 
   <script src="scripts.js"></script>
 </body>
