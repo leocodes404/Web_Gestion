@@ -727,6 +727,14 @@ textarea {
   border: 1px dashed rgba(229, 34, 34, 0.25);
 }
 
+.social-card h3 {
+  display: inline-block;
+  background: var(--color-yellow);
+  color: #0F172A;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+}
+
 .social-links,
 .footer-social {
   display: flex;
